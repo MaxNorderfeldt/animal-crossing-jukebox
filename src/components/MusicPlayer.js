@@ -1,12 +1,9 @@
 import React, { useEffect, useRef } from "react";
+import SongSelector from "./SongSelector";
 
 function MusicPlayer() {
   const [song, setSong] = React.useState();
   const [songList, setSongList] = React.useState();
-
-  const handleChange = (event) => {
-    setSong(event.target.value);
-  };
 
   useEffect(() => {
     if (song) {
@@ -41,27 +38,12 @@ function MusicPlayer() {
   }, [songList]);
 
   //refs
-  const audioSrc = "https://acnhapi.com/v1/music/8";
+  const audioSrc = "";
   const audio = new Audio(audioSrc);
   audio.loop = true;
   const audioRef = useRef(audio);
 
-  return (
-    <div className="centered">
-      <select
-        defaultValue="default"
-        className="dropbtn"
-        onChange={handleChange}
-      >
-        <option value="default" disabled hidden>
-          Select a category
-        </option>
-        <option> 1</option>
-        <option> 2</option>
-        <option> 32</option>
-      </select>
-    </div>
-  );
+  return <SongSelector setSong={setSong} songList={songList}></SongSelector>;
 }
 
 export default MusicPlayer;
