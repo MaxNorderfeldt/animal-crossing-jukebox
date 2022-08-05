@@ -1,9 +1,12 @@
-import React, { useEffect, useRef } from "react";
-import SongSelector from "./SongSelector";
+import React, { FC, useEffect, useRef, useState } from "react";
+import SongSelector from "./SongSelector.tsx";
+import AlbumArt from "./AlbumArt";
+import SongControls from "./SongControls";
 
 function MusicPlayer() {
-  const [song, setSong] = React.useState();
-  const [songList, setSongList] = React.useState();
+  const [song, setSong] = useState("");
+  const [songList, setSongList] = useState([]);
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     if (song) {
@@ -11,6 +14,7 @@ function MusicPlayer() {
       audioRef.current.src = "https://acnhapi.com/v1/music/" + song;
       audioRef.current.load();
       audioRef.current.play();
+      setPlaying(true);
     }
   }, [song]);
 
@@ -33,17 +37,25 @@ function MusicPlayer() {
       });
   }, []);
 
-  useEffect(() => {
-    console.log(songList);
-  }, [songList]);
-
   //refs
   const audioSrc = "";
   const audio = new Audio(audioSrc);
   audio.loop = true;
   const audioRef = useRef(audio);
 
-  return <SongSelector setSong={setSong} songList={songList}></SongSelector>;
+  return (
+    <div className="centered">
+      <AlbumArt song={song}></AlbumArt> <p />
+      <SongSelector setSong={setSong} songList={songList} /> <p />
+      <SongControls
+        audioRef={audioRef}
+        playing={playing}
+        setPlaying={setPlaying}
+        song={song}
+        setSong={setSong}
+      />
+    </div>
+  );
 }
 
 export default MusicPlayer;
