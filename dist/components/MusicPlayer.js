@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import SongSelector from "./SongSelector.tsx";
+import SongSelector from "./SongSelector";
 import AlbumArt from "./AlbumArt";
 import SongControls from "./SongControls";
 function MusicPlayer() {

@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import SongSelector from "./SongSelector.tsx";
+import SongSelector from "./SongSelector";
 import AlbumArt from "./AlbumArt";
 import SongControls from "./SongControls";
 
 function MusicPlayer() {
-  const [song, setSong] = useState(0);
+  const [song, setSong] = useState<number>(0);
   const [songList, setSongList] = useState([]);
   //I use playing as a state variable incase i want to add some component that changes when music is played
   const [playing, setPlaying] = useState(false);
@@ -15,7 +15,7 @@ function MusicPlayer() {
   audio.loop = true;
   const audioRef = useRef(audio);
 
-  function playSong(song) {
+  function playSong(song: number) {
     //Pause the current song if there is any
     audioRef.current.pause();
     audioRef.current.src = "https://acnhapi.com/v1/music/" + song;

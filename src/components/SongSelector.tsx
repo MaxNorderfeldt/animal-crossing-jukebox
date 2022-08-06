@@ -5,10 +5,10 @@ function SongSelector({
   setSong,
 }: {
   songList: string[];
-  setSong: Dispatch<SetStateAction<string>>;
+  setSong: Dispatch<SetStateAction<number>>;
 }) {
   const handleChange = (event: { target: { value: string } }) => {
-    setSong(event.target.value);
+    setSong(Number(event.target.value));
   };
 
   return (

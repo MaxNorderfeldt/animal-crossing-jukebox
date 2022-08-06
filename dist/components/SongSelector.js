@@ -2,7 +2,7 @@ import React from "react";
 function SongSelector(_a) {
     var songList = _a.songList, setSong = _a.setSong;
     var handleChange = function (event) {
-        setSong(event.target.value);
+        setSong(Number(event.target.value));
     };
     return (React.createElement("div", { className: "song-selector" },
         React.createElement("select", { defaultValue: "default", className: "dropbtn ", onChange: handleChange },

@@ -1,6 +1,6 @@
 import React from "react";
 
-function AlbumArt({ song }: { song: string }) {
+function AlbumArt({ song }: { song: number }) {
   return song ? (
     <img
       className="album-image"
