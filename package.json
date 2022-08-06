@@ -2,7 +2,7 @@
   "name": "ac-chill",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maxnorderfeldt.github.io/animal-crossing-jukebox",
+  "homepage": "https://maxnorderfeldt.github.io/animal-crossing-jukebox/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
