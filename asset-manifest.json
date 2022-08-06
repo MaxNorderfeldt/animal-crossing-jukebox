@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AC-CHILL/static/css/main.b5bfebd5.css",
+    "main.js": "/AC-CHILL/static/js/main.bb23c691.js",
+    "static/js/787.138a7780.chunk.js": "/AC-CHILL/static/js/787.138a7780.chunk.js",
+    "index.html": "/AC-CHILL/index.html",
+    "main.b5bfebd5.css.map": "/AC-CHILL/static/css/main.b5bfebd5.css.map",
+    "main.bb23c691.js.map": "/AC-CHILL/static/js/main.bb23c691.js.map",
+    "787.138a7780.chunk.js.map": "/AC-CHILL/static/js/787.138a7780.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5bfebd5.css",
+    "static/js/main.bb23c691.js"
+  ]
+}
