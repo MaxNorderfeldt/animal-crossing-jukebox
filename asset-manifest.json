@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ac-music-player/static/css/main.b5bfebd5.css",
-    "main.js": "/ac-music-player/static/js/main.ac59bc35.js",
-    "static/js/787.138a7780.chunk.js": "/ac-music-player/static/js/787.138a7780.chunk.js",
-    "index.html": "/ac-music-player/index.html",
-    "main.b5bfebd5.css.map": "/ac-music-player/static/css/main.b5bfebd5.css.map",
-    "main.ac59bc35.js.map": "/ac-music-player/static/js/main.ac59bc35.js.map",
-    "787.138a7780.chunk.js.map": "/ac-music-player/static/js/787.138a7780.chunk.js.map"
+    "main.css": "/animal-crossing-jukebox/static/css/main.b5bfebd5.css",
+    "main.js": "/animal-crossing-jukebox/static/js/main.94daf50f.js",
+    "static/js/787.138a7780.chunk.js": "/animal-crossing-jukebox/static/js/787.138a7780.chunk.js",
+    "index.html": "/animal-crossing-jukebox/index.html",
+    "main.b5bfebd5.css.map": "/animal-crossing-jukebox/static/css/main.b5bfebd5.css.map",
+    "main.94daf50f.js.map": "/animal-crossing-jukebox/static/js/main.94daf50f.js.map",
+    "787.138a7780.chunk.js.map": "/animal-crossing-jukebox/static/js/787.138a7780.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5bfebd5.css",
-    "static/js/main.ac59bc35.js"
+    "static/js/main.94daf50f.js"
   ]
 }
