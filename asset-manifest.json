@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/animal-crossing-jukebox/static/css/main.b5bfebd5.css",
-    "main.js": "/animal-crossing-jukebox/static/js/main.94daf50f.js",
+    "main.js": "/animal-crossing-jukebox/static/js/main.a643a1a7.js",
     "static/js/787.138a7780.chunk.js": "/animal-crossing-jukebox/static/js/787.138a7780.chunk.js",
     "index.html": "/animal-crossing-jukebox/index.html",
     "main.b5bfebd5.css.map": "/animal-crossing-jukebox/static/css/main.b5bfebd5.css.map",
-    "main.94daf50f.js.map": "/animal-crossing-jukebox/static/js/main.94daf50f.js.map",
+    "main.a643a1a7.js.map": "/animal-crossing-jukebox/static/js/main.a643a1a7.js.map",
     "787.138a7780.chunk.js.map": "/animal-crossing-jukebox/static/js/787.138a7780.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5bfebd5.css",
-    "static/js/main.94daf50f.js"
+    "static/js/main.a643a1a7.js"
   ]
 }
