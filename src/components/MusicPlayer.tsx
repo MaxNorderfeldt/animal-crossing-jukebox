@@ -31,7 +31,7 @@ function MusicPlayer() {
   }, [song]);
 
   useEffect(() => {
-    fetch("http://acnhapi.com/v1/songs", {
+    fetch("https://acnhapi.com/v1/songs", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
