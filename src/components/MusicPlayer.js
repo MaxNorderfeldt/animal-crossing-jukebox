@@ -4,7 +4,7 @@ import AlbumArt from "./AlbumArt";
 import SongControls from "./SongControls";
 
 function MusicPlayer() {
-  const [song, setSong] = useState("");
+  const [song, setSong] = useState(0);
   const [songList, setSongList] = useState([]);
   //I use playing as a state variable incase i want to add some component that changes when music is played
   const [playing, setPlaying] = useState(false);

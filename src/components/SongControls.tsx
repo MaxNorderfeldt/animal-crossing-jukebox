@@ -1,6 +1,18 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
-function SongControls({ audioRef, playing, setPlaying, song, setSong }) {
+function SongControls({
+  audioRef,
+  playing,
+  setPlaying,
+  song,
+  setSong,
+}: {
+  audioRef: React.MutableRefObject<HTMLAudioElement>;
+  playing: boolean;
+  setPlaying: Dispatch<SetStateAction<boolean>>;
+  song: number;
+  setSong: Dispatch<SetStateAction<number>>;
+}) {
   function handleClick() {
     if (playing) {
       audioRef.current.pause();

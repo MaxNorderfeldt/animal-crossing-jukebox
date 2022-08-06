@@ -6,6 +6,7 @@ function SongControls(_a) {
             audioRef.current.pause();
         }
         else {
+            //I want it to play the first song if no song is selected
             if (!song) {
                 setSong(1);
             }
