@@ -3,7 +3,7 @@ import React from "react";
 function AlbumArt({ song }: { song: string }) {
   return song ? (
     <img
-      id="album-image"
+      className="album-image"
       src={"https://acnhapi.com/v1/images/songs/" + song}
       alt=""
       width="150"
@@ -11,7 +11,7 @@ function AlbumArt({ song }: { song: string }) {
     ></img>
   ) : (
     <img
-      id="album-image"
+      className="album-image"
       src={"./jukebox.webp"}
       alt=""
       width="150"

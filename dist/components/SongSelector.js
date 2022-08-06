@@ -4,11 +4,9 @@ function SongSelector(_a) {
     var handleChange = function (event) {
         setSong(event.target.value);
     };
-    return (React.createElement("div", { className: "centered" },
-        React.createElement("select", { defaultValue: "default", className: "dropbtn", onChange: handleChange },
-            React.createElement("option", { value: "default", disabled: true, hidden: true }, "Select a category"),
-            songList
-                ? songList.map(function (option, index) { return (React.createElement("option", { key: index, value: index + 1 }, option)); })
-                : null)));
+    return (React.createElement("div", { className: "song-selector" },
+        React.createElement("select", { defaultValue: "default", className: "dropbtn ", onChange: handleChange },
+            React.createElement("option", { value: "default", hidden: true }, "Select a song"),
+            songList.map(function (option, index) { return (React.createElement("option", { key: index, value: index + 1 }, option)); }))));
 }
 export default SongSelector;

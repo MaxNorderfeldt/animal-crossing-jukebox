@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SongSelector from "./SongSelector.tsx";
 import AlbumArt from "./AlbumArt";
 import SongControls from "./SongControls";
@@ -6,14 +6,26 @@ import SongControls from "./SongControls";
 function MusicPlayer() {
   const [song, setSong] = useState("");
   const [songList, setSongList] = useState([]);
+  //I use playing as a state variable incase i want to add some component that changes when music is played
   const [playing, setPlaying] = useState(false);
+
+  //The code below initialize the audioRef variable
+  const audioSrc = "";
+  const audio = new Audio(audioSrc);
+  audio.loop = true;
+  const audioRef = useRef(audio);
+
+  function playSong(song) {
+    //Pause the current song if there is any
+    audioRef.current.pause();
+    audioRef.current.src = "https://acnhapi.com/v1/music/" + song;
+    audioRef.current.load();
+    audioRef.current.play();
+  }
 
   useEffect(() => {
     if (song) {
-      audioRef.current.pause();
-      audioRef.current.src = "https://acnhapi.com/v1/music/" + song;
-      audioRef.current.load();
-      audioRef.current.play();
+      playSong(song);
       setPlaying(true);
     }
   }, [song]);
@@ -36,12 +48,6 @@ function MusicPlayer() {
         setSongList(songs);
       });
   }, []);
-
-  //refs
-  const audioSrc = "";
-  const audio = new Audio(audioSrc);
-  audio.loop = true;
-  const audioRef = useRef(audio);
 
   return (
     <div className="centered">
